@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+    random-name:
+      build: 
+        context: .
+        dockerfile: DockerFile
+      volumes:
+        - ../:/app
+      environment:
+        - TZ=UTC
+      tty: true
+
+      
