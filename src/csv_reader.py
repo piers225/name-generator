@@ -3,8 +3,7 @@ import csv
 def csv_reader():
 
     with open('names.csv', 'r') as file:
-        reader = csv.reader(file)
-        next(reader) 
+        reader = csv.reader(file) 
         names = [name for row in reader for name in row]
 
     corpus = ' '.join(names).lower()

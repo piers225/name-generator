@@ -31,4 +31,4 @@ def build_model():
 
     model.fit(sequences, targets, epochs=50)
 
-    model.save("name_generation_model.h5")
+    return model
